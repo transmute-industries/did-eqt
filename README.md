@@ -300,7 +300,7 @@ Example response:
 
 There is a package json script alias for the binary, note the `npm run` prefix below.
 
-CLI expects a .env to be available similar to (example.env)[./example.env].
+CLI expects a `.env` to be available similar to `example.env`
 
 🔥 This is very experimental stuff, be carefult with your env / secrets. 🔥
 
