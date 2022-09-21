@@ -1,0 +1,154 @@
+openapi: '3.0.0'
+info:
+  version: 1.0.0
+  title: DID EQT API
+  description: A pseudo SCITT Transparency Service.
+  license:
+    name: Apache.20
+  contact:
+    name: API Support
+    url: https://transmute.industries
+servers:
+  - url: http://localhost:3000/1.0/
+
+tags:
+  - name: Identifiers
+
+paths:
+  /identifiers/{did}:
+    get:
+      operationId: resolveIdentifier
+      description: Resolve Identifier
+      tags:
+        - Identifiers
+      parameters:
+        - name: did
+          in: path
+          required: true
+          description: A decentralized identifier
+          example: 'did:eqt:0:O6LbcLCrDHxhUBRf6L5aeLKyn_BIk9FbNWYTxdiJHag'
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A DID Resolution Response
+          content:
+            application/json:
+              schema:
+                type: object
+                example: |-
+                  {
+                    "didDocument": {
+                      "@context": [
+                        "https://www.w3.org/ns/did/v1",
+                        {
+                          "@vocab": "https://www.iana.org/assignments/jose#"
+                        }
+                      ],
+                      "id": "did:eqt:0:O6LbcLCrDHxhUBRf6L5aeLKyn_BIk9FbNWYTxdiJHag",
+                      "verificationMethod": [
+                        {
+                          "id": "#0",
+                          "type": "JsonWebKey2020",
+                          "controller": "did:eqt:0:O6LbcLCrDHxhUBRf6L5aeLKyn_BIk9FbNWYTxdiJHag",
+                          "publicKeyJwk": {
+                            "kid": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:O6LbcLCrDHxhUBRf6L5aeLKyn_BIk9FbNWYTxdiJHag",
+                            "kty": "EC",
+                            "crv": "P-256",
+                            "alg": "ES256",
+                            "x": "xfSfA4JPwEMJmffTsu4J24IT7OLLrfpL5Pkpe0FfUNI",
+                            "y": "D-RBWsjZFDiIlUHsyzVtXsOI2Srv48O_3sYqDJriETs"
+                          }
+                        }
+                      ],
+                      "authentication": [
+                        "#0"
+                      ]
+                    },
+                    "didDocumentMetaData": {
+                      "deactivated": false
+                    },
+                    "didResolutionMetadata": {
+                      "processingTimeMilliseconds": 12,
+                      "ioUsage": {
+                        "readIOs": 2
+                      }
+                    }
+                  }
+  /method/operations:
+    post:
+      operationId: applyMethodOperation
+      description: Apply Operation
+      tags:
+        - Identifiers
+      parameters:
+        - name: jws
+          in: body
+          required: true
+          description: A decentralized identifier operation
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                jws:
+                  type: string
+              example:
+                {
+                  'jws': 'eyJpc3MiOiJkaWQ6ZXF0OjA6TzZMYmNMQ3JESHhoVUJSZjZMNWFlTEt5bl9CSWs5RmJOV1lUeGRpSkhhZyIsImtpZCI6IiMwIiwiY3R5Ijoidm5kLmF3cy5xbGRiLmRpZC51cGRhdGUiLCJhbGciOiJFUzI1NiJ9.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvZGlkL3YxIix7IkB2b2NhYiI6Imh0dHBzOi8vd3d3LmlhbmEub3JnL2Fzc2lnbm1lbnRzL2pvc2UjIn1dLCJ2ZXJpZmljYXRpb25NZXRob2QiOlt7ImlkIjoiIzAiLCJ0eXBlIjoiSnNvbldlYktleTIwMjAiLCJwdWJsaWNLZXlKd2siOnsia2lkIjoidXJuOmlldGY6cGFyYW1zOm9hdXRoOmp3ay10aHVtYnByaW50OnNoYS0yNTY6TzZMYmNMQ3JESHhoVUJSZjZMNWFlTEt5bl9CSWs5RmJOV1lUeGRpSkhhZyIsImt0eSI6IkVDIiwiY3J2IjoiUC0yNTYiLCJhbGciOiJFUzI1NiIsIngiOiJ4ZlNmQTRKUHdFTUptZmZUc3U0SjI0SVQ3T0xMcmZwTDVQa3BlMEZmVU5JIiwieSI6IkQtUkJXc2paRkRpSWxVSHN5elZ0WHNPSTJTcnY0OE9fM3NZcURKcmlFVHMifX1dLCJhdXRoZW50aWNhdGlvbiI6WyIjMCJdfQ.bb6zcy6GemfOfL5skRFc1Vr5keb4FUTW1PGlqrMvgLWo0dBWTA_tCfj1UFllV4hkkiBjK4AEj6Cvux2Rx72t-A',
+                }
+
+      responses:
+        '200':
+          description: A DID Resolution Response
+          content:
+            application/json:
+              schema:
+                type: object
+                example: |-
+                  {
+                    "status": 200,
+                    "message": "An entry has been updated in the registry",
+                    "data": {
+                      "didDocument": {
+                        "@context": [
+                          "https://www.w3.org/ns/did/v1",
+                          {
+                            "@vocab": "https://www.iana.org/assignments/jose#"
+                          }
+                        ],
+                        "id": "did:eqt:0:O6LbcLCrDHxhUBRf6L5aeLKyn_BIk9FbNWYTxdiJHag",
+                        "verificationMethod": [
+                          {
+                            "id": "#0",
+                            "type": "JsonWebKey2020",
+                            "controller": "did:eqt:0:O6LbcLCrDHxhUBRf6L5aeLKyn_BIk9FbNWYTxdiJHag",
+                            "publicKeyJwk": {
+                              "kid": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:O6LbcLCrDHxhUBRf6L5aeLKyn_BIk9FbNWYTxdiJHag",
+                              "kty": "EC",
+                              "crv": "P-256",
+                              "alg": "ES256",
+                              "x": "xfSfA4JPwEMJmffTsu4J24IT7OLLrfpL5Pkpe0FfUNI",
+                              "y": "D-RBWsjZFDiIlUHsyzVtXsOI2Srv48O_3sYqDJriETs"
+                            }
+                          }
+                        ],
+                        "authentication": [
+                          "#0"
+                        ]
+                      },
+                      "didDocumentMetaData": {
+                        "documentId": "I79Iq2agcWaF6cj1vJcF5k",
+                        "deactivated": false
+                      },
+                      "didResolutionMetadata": {
+                        "processingTimeMilliseconds": 12,
+                        "ioUsage": {
+                          "readIOs": 3
+                        }
+                      }
+                    }
+                  }

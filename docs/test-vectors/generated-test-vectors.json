@@ -1,0 +1,147 @@
+{
+  "urn:ietf:params:oauth:jwk-thumbprint:sha-256:LVIxF7fsOXjBKbWrrlxboQ0UNhn98YDQpumCTzRUIw4": {
+    "privateKeyJwk": {
+      "kid": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:LVIxF7fsOXjBKbWrrlxboQ0UNhn98YDQpumCTzRUIw4",
+      "kty": "EC",
+      "crv": "P-256",
+      "alg": "ES256",
+      "x": "GPJ5J6Y2SpQ2pF3dffaeIGTtoFMOd15xODQkPoJX_mc",
+      "y": "0SwBySdkesUt5I1-yxlXK2JUQJ91XVWUh4Qb352EoM0",
+      "d": "fEW8qN0LXiHhVgbp5K1Truw4KXupSMEuMcqaFC9loAg"
+    },
+    "operations": [
+      "eyJpc3MiOiJkaWQ6ZXF0OjA6TFZJeEY3ZnNPWGpCS2JXcnJseGJvUTBVTmhuOThZRFFwdW1DVHpSVUl3NCIsImtpZCI6IiMwIiwiY3R5Ijoidm5kLmF3cy5xbGRiLmRpZC5jcmVhdGUiLCJhbGciOiJFUzI1NiJ9.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvZGlkL3YxIix7IkB2b2NhYiI6Imh0dHBzOi8vd3d3LmlhbmEub3JnL2Fzc2lnbm1lbnRzL2pvc2UjIn1dLCJ2ZXJpZmljYXRpb25NZXRob2QiOlt7ImlkIjoiIzAiLCJ0eXBlIjoiSnNvbldlYktleTIwMjAiLCJwdWJsaWNLZXlKd2siOnsia2lkIjoidXJuOmlldGY6cGFyYW1zOm9hdXRoOmp3ay10aHVtYnByaW50OnNoYS0yNTY6TFZJeEY3ZnNPWGpCS2JXcnJseGJvUTBVTmhuOThZRFFwdW1DVHpSVUl3NCIsImt0eSI6IkVDIiwiY3J2IjoiUC0yNTYiLCJhbGciOiJFUzI1NiIsIngiOiJHUEo1SjZZMlNwUTJwRjNkZmZhZUlHVHRvRk1PZDE1eE9EUWtQb0pYX21jIiwieSI6IjBTd0J5U2RrZXNVdDVJMS15eGxYSzJKVVFKOTFYVldVaDRRYjM1MkVvTTAifX1dLCJhdXRoZW50aWNhdGlvbiI6WyIjMCJdLCJhc3NlcnRpb25NZXRob2QiOlsiIzAiXSwiY2FwYWJpbGl0eUludm9jYXRpb24iOlsiIzAiXSwiY2FwYWJpbGl0eURlbGVnYXRpb24iOlsiIzAiXX0.v3o_OFxgTKA75OEIIoQPh0895w-0KkwUuLzYWjFyPA24O143hYjL0zvIGcxmjAwTHPJWcSfe5SbP-YFpEc9MAQ",
+      "eyJpc3MiOiJkaWQ6ZXF0OjA6TFZJeEY3ZnNPWGpCS2JXcnJseGJvUTBVTmhuOThZRFFwdW1DVHpSVUl3NCIsImtpZCI6IiMwIiwiY3R5Ijoidm5kLmF3cy5xbGRiLmRpZC51cGRhdGUiLCJhbGciOiJFUzI1NiJ9.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvZGlkL3YxIix7IkB2b2NhYiI6Imh0dHBzOi8vd3d3LmlhbmEub3JnL2Fzc2lnbm1lbnRzL2pvc2UjIn1dLCJ2ZXJpZmljYXRpb25NZXRob2QiOlt7ImlkIjoiIzAiLCJ0eXBlIjoiSnNvbldlYktleTIwMjAiLCJwdWJsaWNLZXlKd2siOnsia2lkIjoidXJuOmlldGY6cGFyYW1zOm9hdXRoOmp3ay10aHVtYnByaW50OnNoYS0yNTY6TFZJeEY3ZnNPWGpCS2JXcnJseGJvUTBVTmhuOThZRFFwdW1DVHpSVUl3NCIsImt0eSI6IkVDIiwiY3J2IjoiUC0yNTYiLCJhbGciOiJFUzI1NiIsIngiOiJHUEo1SjZZMlNwUTJwRjNkZmZhZUlHVHRvRk1PZDE1eE9EUWtQb0pYX21jIiwieSI6IjBTd0J5U2RrZXNVdDVJMS15eGxYSzJKVVFKOTFYVldVaDRRYjM1MkVvTTAifX1dLCJhdXRoZW50aWNhdGlvbiI6WyIjMCJdLCJhc3NlcnRpb25NZXRob2QiOlsiIzAiXSwiY2FwYWJpbGl0eUludm9jYXRpb24iOlsiIzAiXSwiY2FwYWJpbGl0eURlbGVnYXRpb24iOlsiIzAiXSwibGFzdFVwZGF0ZWQiOiIyMDIyLTA5LTIxVDE5OjEwOjQ4LjQwN1oifQ.3mMuWZZj4W9a51xP3UczTDpy_6zPFSPnIrinBVS7gQZREQXsm2lJGSWR4LQW-3R9UwuiwKOzFsOk-OvHQnSA7A",
+      "eyJpc3MiOiJkaWQ6ZXF0OjA6TFZJeEY3ZnNPWGpCS2JXcnJseGJvUTBVTmhuOThZRFFwdW1DVHpSVUl3NCIsImtpZCI6IiMwIiwiY3R5Ijoidm5kLmF3cy5xbGRiLmRpZC5kZWFjdGl2YXRlIiwiYWxnIjoiRVMyNTYifQ.e30.TlNcIyidXx6Sl44XZ7X56syJ-FqHbi0rnAXhK574uS9OKzdqIcTlgpFl96Myadrja8djOZV8YoHrFFqewjIQ0g"
+    ],
+    "resolutions": [
+      {
+        "status": 200,
+        "message": "An entry has been read from the registry",
+        "data": {
+          "didDocument": {
+            "@context": [
+              "https://www.w3.org/ns/did/v1",
+              {
+                "@vocab": "https://www.iana.org/assignments/jose#"
+              }
+            ],
+            "id": "did:eqt:0:LVIxF7fsOXjBKbWrrlxboQ0UNhn98YDQpumCTzRUIw4",
+            "verificationMethod": [
+              {
+                "id": "#0",
+                "type": "JsonWebKey2020",
+                "controller": "did:eqt:0:LVIxF7fsOXjBKbWrrlxboQ0UNhn98YDQpumCTzRUIw4",
+                "publicKeyJwk": {
+                  "kid": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:LVIxF7fsOXjBKbWrrlxboQ0UNhn98YDQpumCTzRUIw4",
+                  "kty": "EC",
+                  "crv": "P-256",
+                  "alg": "ES256",
+                  "x": "GPJ5J6Y2SpQ2pF3dffaeIGTtoFMOd15xODQkPoJX_mc",
+                  "y": "0SwBySdkesUt5I1-yxlXK2JUQJ91XVWUh4Qb352EoM0"
+                }
+              }
+            ],
+            "authentication": [
+              "#0"
+            ],
+            "assertionMethod": [
+              "#0"
+            ],
+            "capabilityInvocation": [
+              "#0"
+            ],
+            "capabilityDelegation": [
+              "#0"
+            ]
+          },
+          "didDocumentMetaData": {
+            "deactivated": false
+          },
+          "didResolutionMetadata": {
+            "processingTimeMilliseconds": 7,
+            "ioUsage": {
+              "readIOs": 2
+            }
+          }
+        }
+      },
+      {
+        "status": 200,
+        "message": "An entry has been read from the registry",
+        "data": {
+          "didDocument": {
+            "@context": [
+              "https://www.w3.org/ns/did/v1",
+              {
+                "@vocab": "https://www.iana.org/assignments/jose#"
+              }
+            ],
+            "id": "did:eqt:0:LVIxF7fsOXjBKbWrrlxboQ0UNhn98YDQpumCTzRUIw4",
+            "verificationMethod": [
+              {
+                "id": "#0",
+                "type": "JsonWebKey2020",
+                "controller": "did:eqt:0:LVIxF7fsOXjBKbWrrlxboQ0UNhn98YDQpumCTzRUIw4",
+                "publicKeyJwk": {
+                  "kid": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:LVIxF7fsOXjBKbWrrlxboQ0UNhn98YDQpumCTzRUIw4",
+                  "kty": "EC",
+                  "crv": "P-256",
+                  "alg": "ES256",
+                  "x": "GPJ5J6Y2SpQ2pF3dffaeIGTtoFMOd15xODQkPoJX_mc",
+                  "y": "0SwBySdkesUt5I1-yxlXK2JUQJ91XVWUh4Qb352EoM0"
+                }
+              }
+            ],
+            "authentication": [
+              "#0"
+            ],
+            "assertionMethod": [
+              "#0"
+            ],
+            "capabilityInvocation": [
+              "#0"
+            ],
+            "capabilityDelegation": [
+              "#0"
+            ],
+            "lastUpdated": "2022-09-21T19:10:48.407Z"
+          },
+          "didDocumentMetaData": {
+            "deactivated": false
+          },
+          "didResolutionMetadata": {
+            "processingTimeMilliseconds": 6,
+            "ioUsage": {
+              "readIOs": 2
+            }
+          }
+        }
+      },
+      {
+        "status": 200,
+        "message": "An entry has been read from the registry",
+        "data": {
+          "didDocument": {
+            "@context": [
+              "https://www.w3.org/ns/did/v1",
+              {
+                "@vocab": "https://www.iana.org/assignments/jose#"
+              }
+            ],
+            "id": "did:eqt:0:LVIxF7fsOXjBKbWrrlxboQ0UNhn98YDQpumCTzRUIw4"
+          },
+          "didDocumentMetaData": {
+            "deactivated": true
+          },
+          "didResolutionMetadata": {
+            "processingTimeMilliseconds": 5,
+            "ioUsage": {
+              "readIOs": 2
+            }
+          }
+        }
+      }
+    ]
+  }
+}

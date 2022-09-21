@@ -1,0 +1,9 @@
+{
+  "kid": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:-JHL9Tbsc5BpkeR6amgD10gTNU7n7z2075-zSITUNvQ",
+  "kty": "EC",
+  "crv": "P-256",
+  "alg": "ES256",
+  "x": "QRN6DjSWfvYoQhqQPMLX6mS0qglltfBiRqFtCQGmjDw",
+  "y": "z__QKGsBn8tLollHC2pCdMD8qk1iTImjDiUSPD1T9WA",
+  "d": "Klyjp68stKiESv1m61wDDQZZs3oSfI0QAosRnIgmrWE"
+}

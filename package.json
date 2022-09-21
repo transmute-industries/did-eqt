@@ -1,0 +1,44 @@
+{
+  "name": "scitt-ledger-qldb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "did-eqt": "./bin/cli.js"
+  },
+  "scripts": {
+    "postinstall": "curl -L -o opa https://github.com/open-policy-agent/opa/releases/download/v0.44.0/opa_darwin_amd64; chmod +x ./opa",
+    "test": "jest",
+    "did-eqt": "NODE_NO_WARNINGS=1 node ./bin/cli.js",
+    "server:start": "node ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OR13/scitt-ledger-qldb.git"
+  },
+  "author": "Orie Steele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OR13/scitt-ledger-qldb/issues"
+  },
+  "homepage": "https://github.com/OR13/scitt-ledger-qldb#readme",
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^29.0.3",
+    "jwk-to-pem": "^2.0.5",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "@fastify/static": "^6.5.0",
+    "@open-policy-agent/opa-wasm": "^1.8.0",
+    "@or13/did-jwk": "^0.0.3",
+    "amazon-qldb-driver-nodejs": "^2.2.0",
+    "aws-sdk": "^2.1213.0",
+    "dotenv": "^16.0.2",
+    "fastify": "^4.6.0",
+    "ion-js": "^4.3.0",
+    "jsbi": "^3.1.2",
+    "yargs": "^17.5.1"
+  }
+}

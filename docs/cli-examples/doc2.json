@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    {
+      "@vocab": "https://www.iana.org/assignments/jose#"
+    }
+  ],
+  "verificationMethod": [
+    {
+      "id": "#0",
+      "type": "JsonWebKey2020",
+      "publicKeyJwk": {
+        "kid": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:bd6mdWq8VLetwbVJpRPGUyiyeAQS0T_esB7rcNVkELA",
+        "kty": "EC",
+        "crv": "P-256",
+        "alg": "ES256",
+        "x": "bYiEZHQvqXVoT6RvpV3Lu3ub8_f04xow740DLc4M_W0",
+        "y": "0L0myoiAou4B0_hJpQz5dFDjnFrypVTRj4BpbKk0oW8"
+      }
+    },
+    {
+      "id": "#1",
+      "type": "JsonWebKey2020",
+      "publicKeyJwk": {
+        "kid": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:he0vZ0y4GGZ-_mKR6w5Xi0xkngN1uHB6JKJTYWkgr1I",
+        "kty": "EC",
+        "crv": "P-256",
+        "alg": "ECDH-ES+A256KW",
+        "x": "uj-SKFAP8dim0w5kC3LfhfNbtwkmq2tYTPPbXsBl31E",
+        "y": "R-lJQ5LgLU1v9rdj5fOGCkXmxPI_UNk7U2vJ_3gzJZw"
+      }
+    }
+  ],
+  "authentication": ["#0"],
+  "keyAgreement": ["#1"]
+}

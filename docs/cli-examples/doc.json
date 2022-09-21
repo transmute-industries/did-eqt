@@ -1,0 +1,23 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    {
+      "@vocab": "https://www.iana.org/assignments/jose#"
+    }
+  ],
+  "verificationMethod": [
+    {
+      "id": "#0",
+      "type": "JsonWebKey2020",
+      "publicKeyJwk": {
+        "kid": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:51kEbpvjD8Ygm0vSsm7WcrcsIU7DrDImQboAcnyiZ7Q",
+        "kty": "EC",
+        "crv": "P-256",
+        "alg": "ES256",
+        "x": "ziCmHuRUfdJsDQl9hzfKe0MwPT1diqm8Jy6Q6dwTMps",
+        "y": "BqxqiEXXwH78BJ_rMD7-GoCXqj9SPPmO6JZe4or3goA"
+      }
+    }
+  ],
+  "authentication": ["#0"]
+}

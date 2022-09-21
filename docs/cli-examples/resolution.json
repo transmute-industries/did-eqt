@@ -1,0 +1,20 @@
+{
+  "didDocument": {
+    "@context": [
+      "https://www.w3.org/ns/did/v1",
+      {
+        "@vocab": "https://www.iana.org/assignments/jose#"
+      }
+    ],
+    "id": "did:eqt:0:WPmv5E9KzVImXCpmI0W0Vm_znBKXpHTuIzYwxq4r4N0"
+  },
+  "didDocumentMetaData": {
+    "deactivated": true
+  },
+  "didResolutionMetadata": {
+    "processingTimeMilliseconds": 12,
+    "ioUsage": {
+      "readIOs": 2
+    }
+  }
+}

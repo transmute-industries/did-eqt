@@ -1,0 +1,37 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    {
+      "@vocab": "https://www.iana.org/assignments/jose#"
+    }
+  ],
+  "id": "did:eqt:0:tz9SRFwW-zq5hnJuPxLrhgk2zNbou0bFT2FCESYFvLc",
+  "verificationMethod": [
+    {
+      "id": "#0",
+      "type": "JsonWebKey2020",
+      "controller": "did:eqt:0:tz9SRFwW-zq5hnJuPxLrhgk2zNbou0bFT2FCESYFvLc",
+      "publicKeyJwk": {
+        "kid": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:tz9SRFwW-zq5hnJuPxLrhgk2zNbou0bFT2FCESYFvLc",
+        "kty": "EC",
+        "crv": "P-256",
+        "alg": "ES256",
+        "x": "paXc8AVS7ql2XiKj_bc2lSWdFek52EnFtt_6yjkGGSI",
+        "y": "QYtPG2WxTxo1YxMRgC1q-kyYp45UHWklNabhF4QIu6c"
+      }
+    }
+  ],
+  "authentication": [
+    "#0"
+  ],
+  "assertionMethod": [
+    "#0"
+  ],
+  "capabilityInvocation": [
+    "#0"
+  ],
+  "capabilityDelegation": [
+    "#0"
+  ],
+  "policy": "package verify_epcis_cold_chain\n\nimport future.keywords.in\n\ndefault endorse = false\n\ndefault force_validation_error = false\n\nissuer_is_authorized {\n    input.credential.issuer.id in input.authorized_cold_chain_inspectors\n}\n\ncredential_type_is_acceptable {\n    \"EPCISDocumentCredential\" in input.credential.type\n}\n\n\ncredential_claims_are_active {\n    time.parse_rfc3339_ns(input.credential.issuanceDate) <= time.now_ns()\n}\n\n\ntemperature_claim_provided {\n    \"Temperature\" == input.credential.credentialSubject.eventList[0].sensorElementList[0].sensorReport[0].type\n}\n\n\ntemperature_claim_is_in_the_past {\n    endTime := input.credential.credentialSubject.eventList[0].sensorElementList[0].sensorMetadata.endTime\n    time.parse_rfc3339_ns(endTime) <= time.now_ns()\n}\n\nendorse {\n    issuer_is_authorized\n    credential_type_is_acceptable\n    credential_claims_are_active\n    temperature_claim_provided\n    temperature_claim_is_in_the_past\n    not force_validation_error\n}"
+}

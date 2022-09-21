@@ -1,0 +1,52 @@
+{
+  "status": 200,
+  "message": "An entry has been added from the registry",
+  "data": {
+    "didDocument": {
+      "@context": [
+        "https://www.w3.org/ns/did/v1",
+        {
+          "@vocab": "https://www.iana.org/assignments/jose#"
+        }
+      ],
+      "id": "did:eqt:0:tz9SRFwW-zq5hnJuPxLrhgk2zNbou0bFT2FCESYFvLc",
+      "verificationMethod": [
+        {
+          "id": "#0",
+          "type": "JsonWebKey2020",
+          "controller": "did:eqt:0:tz9SRFwW-zq5hnJuPxLrhgk2zNbou0bFT2FCESYFvLc",
+          "publicKeyJwk": {
+            "kid": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:tz9SRFwW-zq5hnJuPxLrhgk2zNbou0bFT2FCESYFvLc",
+            "kty": "EC",
+            "crv": "P-256",
+            "alg": "ES256",
+            "x": "paXc8AVS7ql2XiKj_bc2lSWdFek52EnFtt_6yjkGGSI",
+            "y": "QYtPG2WxTxo1YxMRgC1q-kyYp45UHWklNabhF4QIu6c"
+          }
+        }
+      ],
+      "authentication": [
+        "#0"
+      ],
+      "assertionMethod": [
+        "#0"
+      ],
+      "capabilityInvocation": [
+        "#0"
+      ],
+      "capabilityDelegation": [
+        "#0"
+      ]
+    },
+    "didDocumentMetaData": {
+      "documentId": "GZKrRmWvLrq4PM5icALGdY",
+      "deactivated": false
+    },
+    "didResolutionMetadata": {
+      "processingTimeMilliseconds": 8,
+      "ioUsage": {
+        "readIOs": 0
+      }
+    }
+  }
+}
