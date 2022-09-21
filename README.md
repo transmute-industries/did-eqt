@@ -387,7 +387,7 @@ npm run did-eqt decrypt ./docs/cli-examples/key2.json ./docs/cli-examples/messag
 
 There is an Open API v3 defintion for the REST API.
 
-<img src="./docs/oas.png" />
+<img src="./docs/images/oas.png" />
 
 ```
 npm run did-eqt generate-key ES256 --silent > ./docs/cli-examples/key3.json
